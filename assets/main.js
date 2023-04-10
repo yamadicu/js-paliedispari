@@ -14,9 +14,9 @@ invia.addEventListener('click', function(){
     }
     
     if( parola == parolaReverse ){
-        console.log(`la parola: ${parola} è palindroma`)
+        document.getElementById('testo1').innerHTML = `la parola è palindroma`
     }else{
-        console.log('la parola non è palindroma')
+        document.getElementById('testo1').innerHTML = `la parola non è palindroma`
     }
     
 })
@@ -37,10 +37,10 @@ pari.addEventListener('click', function(){
     let risultato = numero + randomNum
 
     if( risultato %2 == 0 ){
-        document.querySelector('#testo').innerHTML = '<p>hai vinto</p>'
+        document.getElementById('testo2').innerHTML = `hai vinto`
     }
     else{
-        console.log('hai perso')
+        document.getElementById('testo2').innerHTML = `hai perso`
     }
 
 })
@@ -57,10 +57,10 @@ dispari.addEventListener('click', function(){
     let risultato = numero + randomNum
 
     if( risultato %2 == 0 ){
-        console.log('hai perso')
+        document.getElementById('testo2').innerHTML = `hai perso`
     }
     else{
-        console.log('hai vinto')
+        document.getElementById('testo2').innerHTML = `hai vinto`
     }
 
 })
